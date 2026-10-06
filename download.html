@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Download — Thryft</title>
+<meta name="description" content="Get Thryft free on iOS. The whole vintage world — stores, vendors, and markets — in one app.">
+<link rel="icon" type="image/png" href="https://raw.githubusercontent.com/ochorad/thryft-website/master/images/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@600&family=Inter:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="page-dark">
+
+<nav class="nav">
+  <div class="nav__inner">
+    <a class="nav__logo" href="index.html"><img src="images/thryft-logo.png" alt="Thryft"></a>
+    <button class="nav__burger" aria-label="Menu" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
+    <div class="nav__links" id="nav">
+      <a href="about.html">Our Story</a>
+      <div class="nav__drop">
+        <a class="nav__droptrigger" href="whatwedo.html" onclick="if(window.innerWidth<=860){event.preventDefault();this.parentElement.classList.toggle('open');}">What We Do ▾</a>
+        <div class="nav__menu">
+          <a href="shoppers.html">For Shoppers</a>
+          <a href="stores.html">For Stores</a>
+          <a href="vendors.html">For Vendors</a>
+          <a href="markets.html">For Market Owners</a>
+        </div>
+      </div>
+      <a href="contact.html">Connect</a>
+      <a class="nav__cta" href="download.html">Get the app</a>
+    </div>
+  </div>
+</nav>
+
+<div class="wrap">
+  <div class="split" style="padding:60px 0 70px;align-items:center;">
+    <div>
+      <div class="kicker kicker--bright">Get the App</div>
+      <h1 class="h1" style="font-size:clamp(46px,7.5vw,100px);color:#fff;margin-top:14px;">Get Thryft.<br>Start digging.</h1>
+      <p class="lede" style="color:var(--body);max-width:40ch;margin:24px 0 32px;">The whole vintage world — stores, vendors, and markets — free on iOS. Android is on the way.</p>
+      <div style="display:flex;gap:18px;align-items:center;flex-wrap:wrap;">
+        <a href="https://apps.apple.com/us/app/thryft-find-vintage-easy/id6502410266" target="_blank" rel="noopener" style="display:block;"><img src="https://raw.githubusercontent.com/ochorad/thryft-website/master/images/appstore.png" alt="Download on the App Store" style="width:170px;border-radius:8px;"></a>
+        <span class="mono" style="font-size:11px;letter-spacing:.04em;text-transform:uppercase;color:var(--faint);max-width:16ch;">Free on iOS · iOS 15+ · Austin and expanding</span>
+      </div>
+    </div>
+    <div style="display:flex;justify-content:center;">
+      <div class="phone">
+        <div class="phone__screen"><img src="https://raw.githubusercontent.com/ochorad/thryft-website/master/images/iphone-screen-with-shadow.png" alt="Thryft app screen" style="object-fit:contain;padding:10px;background:var(--raised);"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="section section--paper2">
+  <div class="wrap">
+    <div class="kicker">What's Inside</div>
+    <h2 class="h2" style="margin:14px 0 34px;">The whole scene, one download.</h2>
+    <div class="value-grid">
+      <div class="value"><div class="value__num">01</div><h3>Discover</h3><p>Every vintage store, vendor, and pop-up near you on one live map.</p></div>
+      <div class="value"><div class="value__num">02</div><h3>Markets</h3><p>See what’s on this weekend — pop-ups, vendor events, and drops nearby.</p></div>
+      <div class="value"><div class="value__num">03</div><h3>Connect</h3><p>Message shops, save favorites, follow vendors, and never miss a drop.</p></div>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:36px;font-family:'Figtree',sans-serif;font-weight:600;font-size:12px;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);">
+      <div style="border-top:2px solid var(--brand);padding-top:12px;">Platform<br><span style="color:var(--ink);font-size:15px;">iOS 15+</span></div>
+      <div style="border-top:2px solid var(--brand);padding-top:12px;">Price<br><span style="color:var(--ink);font-size:15px;">Free</span></div>
+      <div style="border-top:2px solid var(--brand);padding-top:12px;">Coverage<br><span style="color:var(--ink);font-size:15px;">Austin, expanding</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap" style="text-align:center;">
+    <h2 class="h2" style="font-size:clamp(34px,5vw,64px);color:#fff;">Your next find is waiting.</h2>
+    <div class="btn-row" style="justify-content:center;margin-top:30px;">
+      <a class="btn btn--brand" href="https://apps.apple.com/us/app/thryft-find-vintage-easy/id6502410266" target="_blank" rel="noopener" style="background:var(--brand-bright);color:var(--ink);">Download on the App Store</a>
+      <a class="btn btn--ghost" href="contact.html" style="color:#fff;border-color:var(--rule-strong);">Partner with us</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer" style="border-top:1px solid var(--rule);">
+  <div class="footer__inner">
+    <div class="footer__cols">
+      <div>
+        <a class="footer__brand" href="index.html">Thryft<span>.</span></a>
+        <p class="footer__tag">The vintage world, in one app. Started in Austin, built for the USA.</p>
+      </div>
+      <div class="footer__col"><span class="head">Explore</span><a href="about.html">Our Story</a><a href="whatwedo.html">What We Do</a><a href="contact.html">Connect</a><a href="policies.html">Policies</a></div>
+      <div class="footer__col"><span class="head">For You</span><a href="shoppers.html">Shoppers</a><a href="stores.html">Store Owners</a><a href="vendors.html">Vendors</a><a href="markets.html">Market Owners</a></div>
+      <div class="footer__col"><span class="head">Follow</span><a href="https://www.instagram.com/officialthryft/" target="_blank" rel="noopener">Instagram</a><a href="https://www.tiktok.com/@officialthryft" target="_blank" rel="noopener">TikTok</a><a href="mailto:business@officialthryft.com">Email</a><a href="download.html">Download</a></div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 THRYFT · STARTED IN AUSTIN · BUILT FOR THE USA</span>
+      <a href="mailto:business@officialthryft.com">BUSINESS@OFFICIALTHRYFT.COM</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

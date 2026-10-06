@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Thryft</title>
+<meta name="description" content="Let's talk. Thryft collaborates with vintage stores, market organizers, independent vendors, and sustainable brands.">
+<link rel="icon" type="image/png" href="https://raw.githubusercontent.com/ochorad/thryft-website/master/images/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@600&family=Inter:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav__inner">
+    <a class="nav__logo" href="index.html"><img src="images/thryft-logo.png" alt="Thryft"></a>
+    <button class="nav__burger" aria-label="Menu" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
+    <div class="nav__links" id="nav">
+      <a href="about.html">Our Story</a>
+      <div class="nav__drop">
+        <a class="nav__droptrigger" href="whatwedo.html" onclick="if(window.innerWidth<=860){event.preventDefault();this.parentElement.classList.toggle('open');}">What We Do ▾</a>
+        <div class="nav__menu">
+          <a href="shoppers.html">For Shoppers</a>
+          <a href="stores.html">For Stores</a>
+          <a href="vendors.html">For Vendors</a>
+          <a href="markets.html">For Market Owners</a>
+        </div>
+      </div>
+      <a class="active" href="contact.html">Connect</a>
+      <a class="nav__cta" href="download.html">Get the app</a>
+    </div>
+  </div>
+</nav>
+
+<div class="wrap">
+  <header style="padding:56px 0 44px;">
+    <h1 class="h1" style="font-size:clamp(46px,8vw,108px);">Let's talk.</h1>
+    <p class="lede" style="margin-top:24px;">Shopper, store owner, vendor, organizer, or just curious — we'd love to hear from you.</p>
+  </header>
+</div>
+
+<div class="wrap">
+  <div class="methods" style="margin-top:36px;">
+    <a class="method" href="mailto:business@officialthryft.com">
+      <div class="method__k">Email</div>
+      <div class="method__v">business@officialthryft.com</div>
+      <div class="method__note">Best for partnerships ↗</div>
+    </a>
+    <a class="method" href="https://www.instagram.com/officialthryft/" target="_blank" rel="noopener">
+      <div class="method__k">Instagram</div>
+      <div class="method__v">@officialthryft</div>
+      <div class="method__note">Drops & finds ↗</div>
+    </a>
+    <a class="method" href="https://www.tiktok.com/@officialthryft" target="_blank" rel="noopener">
+      <div class="method__k">TikTok</div>
+      <div class="method__v">@officialthryft</div>
+      <div class="method__note">Behind the scenes ↗</div>
+    </a>
+  </div>
+</div>
+
+<section class="section" style="padding-top:64px;">
+  <div class="wrap">
+    <div class="split" style="align-items:start;">
+      <div>
+        <div class="kicker">Who We Collaborate With</div>
+        <h2 class="h2" style="font-size:clamp(26px,3.2vw,38px);margin:14px 0 22px;">Let's build the vintage scene together.</h2>
+        <div class="rows" style="border-top:1px solid var(--rule);">
+          <div class="row" style="grid-template-columns:36px 1fr;gap:16px;padding:20px 0;border-bottom:1px solid var(--rule);"><span class="row__num">01</span><div><div class="row__title" style="font-size:18px;">Vintage stores</div><div style="font-size:15.5px;color:var(--muted);line-height:1.5;margin-top:3px;">Claim your profile and get on the map for local shoppers</div></div></div>
+          <div class="row" style="grid-template-columns:36px 1fr;gap:16px;padding:20px 0;border-bottom:1px solid var(--rule);"><span class="row__num">02</span><div><div class="row__title" style="font-size:18px;">Market organizers</div><div style="font-size:15.5px;color:var(--muted);line-height:1.5;margin-top:3px;">List your event and bring vendors and shoppers together.</div></div></div>
+          <div class="row" style="grid-template-columns:36px 1fr;gap:16px;padding:20px 0;border-bottom:1px solid var(--rule);"><span class="row__num">03</span><div><div class="row__title" style="font-size:18px;">Independent vendors</div><div style="font-size:15.5px;color:var(--muted);line-height:1.5;margin-top:3px;">Find markets and grow a following that travels with you.</div></div></div>
+          <div class="row" style="grid-template-columns:36px 1fr;gap:16px;padding:20px 0;"><span class="row__num">04</span><div><div class="row__title" style="font-size:18px;">Sustainable brands</div><div style="font-size:15.5px;color:var(--muted);line-height:1.5;margin-top:3px;">Partner on drops, events, and the future of secondhand.</div></div></div>
+        </div>
+      </div>
+
+      <form class="form" onsubmit="event.preventDefault();this.querySelector('button').textContent='Thanks — we’ll be in touch ✓';this.querySelector('button').style.background='var(--brand-bright)';">
+        <h3>Send us a note.</h3>
+        <p class="sub">We read everything and reply fast.</p>
+        <div class="field-2">
+          <label class="field">Name<input type="text" placeholder="Your name" required></label>
+        </div>
+        <label class="field">Email<input type="email" placeholder="you@email.com" required></label>
+        <label class="field">I am a
+          <select>
+            <option>Shopper</option>
+            <option>Store owner</option>
+            <option>Vendor</option>
+            <option>Market organizer</option>
+            <option>Brand / partner</option>
+            <option>Other</option>
+          </select>
+        </label>
+        <label class="field">Message<textarea rows="4" placeholder="Tell us what's up…"></textarea></label>
+        <button class="btn btn--brand" type="submit" style="margin-top:20px;width:100%;background:var(--brand-bright);color:var(--ink);justify-content:center;">Send message</button>
+        <p class="mono" style="font-size:10.5px;color:var(--faint);letter-spacing:.04em;text-align:center;margin:12px 0 0;">Or email business@officialthryft.com directly</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__cols">
+      <div>
+        <a class="footer__brand" href="index.html">Thryft<span>.</span></a>
+        <p class="footer__tag">The vintage world, in one app. Started in Austin, built for the USA.</p>
+      </div>
+      <div class="footer__col"><span class="head">Explore</span><a href="about.html">Our Story</a><a href="whatwedo.html">What We Do</a><a href="contact.html">Connect</a><a href="policies.html">Policies</a></div>
+      <div class="footer__col"><span class="head">For You</span><a href="shoppers.html">Shoppers</a><a href="stores.html">Store Owners</a><a href="vendors.html">Vendors</a><a href="markets.html">Market Owners</a></div>
+      <div class="footer__col"><span class="head">Follow</span><a href="https://www.instagram.com/officialthryft/" target="_blank" rel="noopener">Instagram</a><a href="https://www.tiktok.com/@officialthryft" target="_blank" rel="noopener">TikTok</a><a href="mailto:business@officialthryft.com">Email</a><a href="download.html">Download</a></div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 THRYFT · STARTED IN AUSTIN · BUILT FOR THE USA</span>
+      <a href="mailto:business@officialthryft.com">BUSINESS@OFFICIALTHRYFT.COM</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

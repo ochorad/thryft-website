@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Vendors — Thryft</title>
+<meta name="description" content="Find your next market. Discover markets looking for vendors, build a following, and grow beyond your usual spot.">
+<link rel="icon" type="image/png" href="https://raw.githubusercontent.com/ochorad/thryft-website/master/images/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@600&family=Inter:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="nav">
+  <div class="nav__inner">
+    <a class="nav__logo" href="index.html"><img src="images/thryft-logo.png" alt="Thryft"></a>
+    <button class="nav__burger" aria-label="Menu" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
+    <div class="nav__links" id="nav">
+      <a href="about.html">Our Story</a>
+      <div class="nav__drop">
+        <a class="nav__droptrigger" href="whatwedo.html" onclick="if(window.innerWidth<=860){event.preventDefault();this.parentElement.classList.toggle('open');}">What We Do ▾</a>
+        <div class="nav__menu">
+          <a href="shoppers.html">For Shoppers</a>
+          <a href="stores.html">For Stores</a>
+          <a class="active" href="vendors.html">For Vendors</a>
+          <a href="markets.html">For Market Owners</a>
+        </div>
+      </div>
+      <a href="contact.html">Connect</a>
+      <a class="nav__cta" href="download.html">Get the app</a>
+    </div>
+  </div>
+</nav>
+<div class="wrap">
+  <div class="split" style="padding:56px 0 40px;align-items:center;">
+    <div>
+      <div class="kicker">For Vendors</div>
+      <h1 class="h1 h1--page" style="margin-top:14px;">Find your next market.</h1>
+      <p class="lede" style="max-width:38ch;margin:24px 0 30px;">Discover markets looking for vendors, build a following, and grow beyond your usual spot.</p>
+      <div class="btn-row">
+        <a class="btn btn--solid" href="download.html">Download — free on iOS</a>
+        <a class="btn btn--ghost" href="#how">How it works</a>
+      </div>
+    </div>
+    <div class="portrait" style="aspect-ratio:4/5;display:flex;align-items:center;justify-content:center;background:var(--raised);">
+      <img src="https://raw.githubusercontent.com/ochorad/thryft-website/master/images/iphone-screen-with-shadow.png" alt="Thryft app" style="object-fit:contain;padding:28px;">
+    </div>
+  </div>
+</div>
+
+<section class="section section--dark">
+  <div class="wrap">
+    <div class="kicker kicker--bright">What You Get</div>
+    <h2 class="h2" style="margin:14px 0 34px;">Take your booth further.</h2>
+    <div class="feat-grid">
+      <div class="feat"><h3>Find markets</h3><p>Browse markets and pop-ups looking for vendors near you and beyond.</p></div>
+      <div class="feat"><h3>Build a following</h3><p>Let shoppers follow you and find your booth wherever you pop up next.</p></div>
+      <div class="feat"><h3>All-in-one coordination</h3><p>Communicate with market owners, get updates on market planning, and pay for your spots — all in-app.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="how">
+  <div class="wrap">
+    <div class="kicker">How It Works</div>
+    <h2 class="h2" style="margin:14px 0 30px;">From sign-up to setup.</h2>
+    <div class="rows">
+      <div class="row row--how"><div class="row__num">01</div><h3 class="row__title">Create your profile</h3><p class="row__desc">Show your style, your goods, and where you’ve been popping up.</p></div>
+      <div class="row row--how"><div class="row__num">02</div><h3 class="row__title">Find & apply to markets</h3><p class="row__desc">Discover events that fit your vibe and reach organizers directly.</p></div>
+      <div class="row row--how"><div class="row__num">03</div><h3 class="row__title">Grow your audience</h3><p class="row__desc">Build a following that travels with you from market to market.</p></div>
+    </div>
+    <div class="pillrow">
+      <p class="pill"><b>When it's best</b>Booking a new season, breaking into a new city, or filling open weekends.</p>
+      <p class="pill"><b>Why vendors love it</b>A following that travels with you — not tied to one market or feed.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="cta-banner">
+      <span class="figtag figtag--ink">Get Thryft</span>
+      <h2>Find your next spot, grow your reach.</h2>
+      <a class="btn btn--solid" href="download.html" style="white-space:nowrap;">Download free on iOS →</a>
+    </div>
+  </div>
+</section>
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__cols">
+      <div>
+        <a class="footer__brand" href="index.html">Thryft<span>.</span></a>
+        <p class="footer__tag">The secondhand world, in one app. Started in Austin, built for the USA.</p>
+      </div>
+      <div class="footer__col"><span class="head">Explore</span><a href="about.html">Our Story</a><a href="whatwedo.html">What We Do</a><a href="contact.html">Connect</a><a href="policies.html">Policies</a></div>
+      <div class="footer__col"><span class="head">For You</span><a href="shoppers.html">Shoppers</a><a href="stores.html">Store Owners</a><a href="vendors.html">Vendors</a><a href="markets.html">Market Owners</a></div>
+      <div class="footer__col"><span class="head">Follow</span><a href="https://www.instagram.com/officialthryft/" target="_blank" rel="noopener">Instagram</a><a href="https://www.tiktok.com/@officialthryft" target="_blank" rel="noopener">TikTok</a><a href="mailto:business@officialthryft.com">Email</a><a href="download.html">Download</a></div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 THRYFT · STARTED IN AUSTIN · BUILT FOR THE USA</span>
+      <a href="mailto:business@officialthryft.com">BUSINESS@OFFICIALTHRYFT.COM</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

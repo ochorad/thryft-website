@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Market Owners — Thryft</title>
+<meta name="description" content="Fill your market with the right vendors. List your market, attract vendors, and bring shoppers to your event page.">
+<link rel="icon" type="image/png" href="https://raw.githubusercontent.com/ochorad/thryft-website/master/images/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@600&family=Inter:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="nav">
+  <div class="nav__inner">
+    <a class="nav__logo" href="index.html"><img src="images/thryft-logo.png" alt="Thryft"></a>
+    <button class="nav__burger" aria-label="Menu" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
+    <div class="nav__links" id="nav">
+      <a href="about.html">Our Story</a>
+      <div class="nav__drop">
+        <a class="nav__droptrigger" href="whatwedo.html" onclick="if(window.innerWidth<=860){event.preventDefault();this.parentElement.classList.toggle('open');}">What We Do ▾</a>
+        <div class="nav__menu">
+          <a href="shoppers.html">For Shoppers</a>
+          <a href="stores.html">For Stores</a>
+          <a href="vendors.html">For Vendors</a>
+          <a class="active" href="markets.html">For Market Owners</a>
+        </div>
+      </div>
+      <a href="contact.html">Connect</a>
+      <a class="nav__cta" href="download.html">Get the app</a>
+    </div>
+  </div>
+</nav>
+<div class="wrap">
+  <div class="split" style="padding:56px 0 40px;align-items:center;">
+    <div>
+      <div class="kicker">For Market Owners</div>
+      <h1 class="h1 h1--page" style="margin-top:14px;">Everything to fill and market your event.</h1>
+      <p class="lede" style="max-width:38ch;margin:24px 0 30px;">List your market, manage vendor communication, and bring shoppers straight to your event page.</p>
+      <div class="btn-row">
+        <a class="btn btn--solid" href="download.html">Download — free on iOS</a>
+        <a class="btn btn--ghost" href="#how">How it works</a>
+      </div>
+    </div>
+    <div class="portrait" style="aspect-ratio:4/5;display:flex;align-items:center;justify-content:center;background:var(--raised);">
+      <img src="https://raw.githubusercontent.com/ochorad/thryft-website/master/images/iphone-screen-with-shadow.png" alt="Thryft app" style="object-fit:contain;padding:28px;">
+    </div>
+  </div>
+</div>
+
+<section class="section section--dark">
+  <div class="wrap">
+    <div class="kicker kicker--bright">What You Get</div>
+    <h2 class="h2" style="margin:14px 0 34px;">Run a market that draws a crowd.</h2>
+    <div class="feat-grid" style="grid-template-columns:repeat(2,1fr);">
+      <div class="feat"><h3>Free marketing</h3><p>Get your event in front of thousands of shoppers browsing for something to do — no ad spend required.</p></div>
+      <div class="feat"><h3>Find or invite vendors</h3><p>Get discovered by independent vendors looking for their next market, or invite the vendors you already work with.</p></div>
+      <div class="feat"><h3>Group communication</h3><p>Message every vendor accepted to your event in one place, all in-app.</p></div>
+      <div class="feat"><h3>Payments handled in-app</h3><p>Collect payment for vendor spots directly through Thryft — no spreadsheets or side deals.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="how">
+  <div class="wrap">
+    <div class="kicker">How It Works</div>
+    <h2 class="h2" style="margin:14px 0 30px;">List your market in minutes.</h2>
+    <div class="rows">
+      <div class="row row--how"><div class="row__num">01</div><h3 class="row__title">Get approved to host</h3><p class="row__desc">Brick-and-mortar store owners are already approved — new organizers get approved to host events.</p></div>
+      <div class="row row--how"><div class="row__num">02</div><h3 class="row__title">Set up your event</h3><p class="row__desc">Add dates, location, and what makes your event special.</p></div>
+      <div class="row row--how"><div class="row__num">03</div><h3 class="row__title">Fill vendor spots</h3><p class="row__desc">Invite vendors directly or let them reach out and request to join. Payment for spots, and spot designation if needed, are handled in-app.</p></div>
+      <div class="row row--how"><div class="row__num">04</div><h3 class="row__title">Stay connected</h3><p class="row__desc">Once vendors are accepted, message them directly in-app to coordinate everything ahead of the event.</p></div>
+      <div class="row row--how"><div class="row__num">05</div><h3 class="row__title">Watch it fill up</h3><p class="row__desc">Sit back and track attendance as shoppers RSVP to your event.</p></div>
+    </div>
+    <div class="pillrow">
+      <p class="pill"><b>When it's best</b>Launching a new market, filling vendor spots, or growing your weekend turnout.</p>
+      <p class="pill"><b>Why organizers love it</b>No flyers, no group chats, no spreadsheets— just one app for everyone involved.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="cta-banner">
+      <span class="figtag figtag--ink">Get Thryft</span>
+      <h2>Fill your market, draw the crowd.</h2>
+      <a class="btn btn--solid" href="download.html" style="white-space:nowrap;">Download free on iOS →</a>
+    </div>
+  </div>
+</section>
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__cols">
+      <div>
+        <a class="footer__brand" href="index.html">Thryft<span>.</span></a>
+        <p class="footer__tag">The vintage world, in one app. Started in Austin, built for the USA.</p>
+      </div>
+      <div class="footer__col"><span class="head">Explore</span><a href="about.html">Our Story</a><a href="whatwedo.html">What We Do</a><a href="contact.html">Connect</a><a href="policies.html">Policies</a></div>
+      <div class="footer__col"><span class="head">For You</span><a href="shoppers.html">Shoppers</a><a href="stores.html">Store Owners</a><a href="vendors.html">Vendors</a><a href="markets.html">Market Owners</a></div>
+      <div class="footer__col"><span class="head">Follow</span><a href="https://www.instagram.com/officialthryft/" target="_blank" rel="noopener">Instagram</a><a href="https://www.tiktok.com/@officialthryft" target="_blank" rel="noopener">TikTok</a><a href="mailto:business@officialthryft.com">Email</a><a href="download.html">Download</a></div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 THRYFT · STARTED IN AUSTIN · BUILT FOR THE USA</span>
+      <a href="mailto:business@officialthryft.com">BUSINESS@OFFICIALTHRYFT.COM</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
