@@ -1,0 +1,13 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["S8YCZ739ZW.Thryft.Thryft"],
+        "components": [
+          {"/": "/s/*"}, {"/": "/v/*"}, {"/": "/m/*"}, {"/": "/u/*"},
+          {"/": "/store/*"}, {"/": "/vendor/*"}, {"/": "/popup/*"}, {"/": "/market/*"}, {"/": "/event/*"}, {"/": "/user/*"}
+        ]
+      }
+    ]
+  }
+}

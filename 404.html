@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Thryft</title>
+<meta name="description" content="Thryft maps every vintage store, vendor, and pop-up market near you.">
+<meta property="og:site_name" content="Thryft">
+<meta property="og:title" content="Thryft">
+<meta property="og:description" content="Thryft maps every vintage store, vendor, and pop-up market near you.">
+<meta property="og:image" content="https://www.officialthryft.com/images/thryft-logo.png">
+<link rel="icon" type="image/png" href="/images/thryft-logo.png">
+<script>
+  // Decide synchronously whether this is a profile URL so the marketing 404 never flashes.
+  if (/^\/(s|v|m|u|store|vendor|popup|market|event|user)\/[^/]+\/?$/.test(location.pathname)) {
+    document.documentElement.classList.add('is-profile');
+    var m = document.createElement('meta');
+    m.name = 'apple-itunes-app';
+    m.content = 'app-id=6502410266, app-argument=' + location.href;
+    document.head.appendChild(m);
+  } else {
+    document.title = 'Page not found \u2014 Thryft';
+  }
+</script>
+<style>html.is-profile #nf{display:none}</style>
+<link rel="stylesheet" href="/style.css" id="site-css">
+<script>
+  if (document.documentElement.classList.contains('is-profile')) document.getElementById('site-css').disabled = true;
+</script>
+<link rel="stylesheet" href="/profile/profile.css">
+</head>
+<body>
+
+<div id="nf">
+<nav class="nav">
+  <div class="nav__inner">
+    <a class="nav__logo" href="/index.html"><img src="/images/thryft-logo.png" alt="Thryft"></a>
+    <button class="nav__burger" aria-label="Menu" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
+    <div class="nav__links" id="nav">
+      <a href="/about.html">Our Story</a>
+      <div class="nav__drop">
+        <a class="nav__droptrigger" href="/whatwedo.html" onclick="if(window.innerWidth<=860){event.preventDefault();this.parentElement.classList.toggle('open');}">What We Do ▾</a>
+        <div class="nav__menu">
+          <a href="/shoppers.html">For Shoppers</a>
+          <a href="/stores.html">For Stores</a>
+          <a href="/vendors.html">For Vendors</a>
+          <a href="/markets.html">For Market Owners</a>
+        </div>
+      </div>
+      <a href="/contact.html">Connect</a>
+      <a class="nav__cta" href="/download.html">Get the app</a>
+    </div>
+  </div>
+</nav>
+
+<div class="wrap">
+  <header class="hero">
+    <h1 class="h1" style="font-family:'Figtree',sans-serif;font-weight:600;letter-spacing:-.02em;">Page not found</h1>
+    <p class="lede">We couldn't find the page you were looking for. It may have moved, or the link might be mistyped.</p>
+    <div class="btn-row">
+      <a class="btn btn--solid" href="/index.html">Back to home</a>
+      <a class="btn btn--ghost" href="/download.html">Get the app</a>
+    </div>
+  </header>
+</div>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__cols">
+      <div>
+        <a class="footer__brand" href="/index.html">Thryft<span>.</span></a>
+        <p class="footer__tag">The secondhand clothing world, in one app. Started in Austin, built for the USA.</p>
+      </div>
+      <div class="footer__col"><span class="head">Explore</span><a href="/about.html">Our Story</a><a href="/whatwedo.html">What We Do</a><a href="/contact.html">Connect</a><a href="/policies.html">Policies</a></div>
+      <div class="footer__col"><span class="head">For You</span><a href="/shoppers.html">Shoppers</a><a href="/stores.html">Store Owners</a><a href="/vendors.html">Vendors</a><a href="/markets.html">Market Owners</a></div>
+      <div class="footer__col"><span class="head">Follow</span><a href="https://www.instagram.com/officialthryft/" target="_blank" rel="noopener">Instagram</a><a href="https://www.tiktok.com/@officialthryft" target="_blank" rel="noopener">TikTok</a><a href="mailto:business@officialthryft.com">Email</a><a href="/download.html">Download</a></div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 THRYFT · STARTED IN AUSTIN · BUILT FOR THE USA</span>
+      <a href="mailto:business@officialthryft.com">BUSINESS@OFFICIALTHRYFT.COM</a>
+    </div>
+  </div>
+</footer>
+</div>
+
+<div id="profile-root"></div>
+
+<script type="module">
+  import('/profile/profile.js').then(({ route, mount }) => {
+    const r = route(location.pathname);
+    if (r) return mount(r, document.getElementById('profile-root'));
+  }).catch(() => {
+    document.documentElement.classList.remove('is-profile');
+    const sc = document.getElementById('site-css'); if (sc) sc.disabled = false;
+    document.title = 'Page not found \u2014 Thryft';
+  });
+</script>
+</body>
+</html>
