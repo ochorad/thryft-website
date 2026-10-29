@@ -86,7 +86,7 @@ html.is-profile #profile-root{display:block;min-height:100vh;overflow-x:hidden}
 .pf-tab.is-on{background:rgba(255,255,255,.96);color:var(--green);font-weight:700;box-shadow:0 2px 4px rgba(0,0,0,.12)}
 .pf-panel[hidden]{display:none}
 
-.pf-banner{margin-bottom:16px;padding:12px 14px;border-radius:16px;background:var(--green);color:#fff;font-size:14px;font-weight:700}
+.pf-banner{margin-bottom:16px;padding:12px 14px;border-radius:16px;background:var(--green);color:#fff;font-size:14px;font-weight:700;text-align:center}
 
 /* -------- tags / chips */
 .pf-tags,.pf-chiprow{display:flex;flex-wrap:wrap;gap:8px}
